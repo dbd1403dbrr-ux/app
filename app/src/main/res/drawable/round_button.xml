@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33007AFF"> <!-- Màu ripple, bán trong suốt -->
+
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Gradient từ màu nhạt sang màu đậm -->
+            <gradient
+                android:startColor="#4DA6FF"
+                android:endColor="#007AFF"
+                android:angle="90"/>
+            <corners android:radius="16dp"/>
+            <padding
+                android:left="12dp"
+                android:top="12dp"
+                android:right="12dp"
+                android:bottom="12dp"/>
+        </shape>
+    </item>
+
+</ripple>

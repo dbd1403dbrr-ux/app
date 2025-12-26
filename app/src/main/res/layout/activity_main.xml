@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TRẠNG THÁI MQTT -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔄 Đang kết nối MQTT..."
+            android:textSize="16sp"
+            android:textColor="#007AFF"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <!-- NÚT MỞ KHÓA -->
+        <Button
+            android:id="@+id/khoa"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="🔓 MỞ KHÓA"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"/>
+
+        <!-- NHÓM VÂN TAY -->
+        <Button
+            android:id="@+id/vantay_them"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="➕ THÊM VÂN TAY"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"/>
+
+        <Button
+            android:id="@+id/vantay_xoaid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:text="🗑️ XÓA VÂN TAY THEO ID"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"/>
+
+        <Button
+            android:id="@+id/vantay_xoaa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:text="❌ XÓA TẤT CẢ VÂN TAY"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"/>
+
+        <!-- =================== GAS =================== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💨 Cảm biến khí GAS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/txtgiatri1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="--- Analog"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/txtTrangThaiGas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AN TOÀN"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2ECC71"/>
+        </LinearLayout>
+
+        <!-- =================== LỬA =================== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔥 Cảm biến LỬA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/txtgiatri2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="---"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/txtTrangThaiLua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KHÔNG CÓ LỬA"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2ECC71"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
